@@ -1,0 +1,257 @@
+:root {
+    font-size: 16px;
+    font-family: "Basis Grotesque Pro", Helvetica, Arial, sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: $141418;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 22.5px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 16.2px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 14.4px;
+    font-weight: 400;
+}
+
+p, label {
+    font-weight: 400;
+    font-size: 12.6px;
+}
+
+hr {
+    height: 1.8px;
+    background-color: rgb(244 244 244);
+    border-style: none;
+}
+
+.see_all {
+    display: inline-block;
+    text-decoration: none;
+    color: #dddddd;
+}
+
+.function_button {
+    width: 35.5px;
+    height: 35.5px;
+    min-width: 40.5px;
+    min-height: 40.5px;
+    background-color: #fafafa;
+    border-radius: 5%;
+    margin-left: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.function_button img {
+    width: 11.7px;
+    height: 11.7px;
+}
+
+.section_header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section_header h2 {
+    margin-right: auto;
+}
+
+.header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profile_thumbnail_section, .inline_flex_containter {
+    /* background-color: green; */
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.profile_thumbnail .username_and_note {
+    border-radius: 50%;
+    display: block;
+    padding: 5px 10px;
+}
+
+.profile_thumbnail {
+    display: flex;
+    align-content: space-between;
+    width: 225px;
+    margin-bottom: 20px;
+    /* background-color: greenyellow; */
+}
+
+.profile_thumbnail .profile_pic {
+    border-radius: 50%;
+    width: 40.5px;
+    height: 40.5px;
+}
+
+.profile_thumbnail h3, .group_thumbnail h3, .event_course_thumbnail h3{
+    font-size: 14.4px;
+    font-weight: 400;
+    margin-bottom: 2.5px;
+}
+
+.event_course_thumbnail p, .event_course_thumbnail h3 {
+    color: white;
+}
+
+.groups_thumbnail_section { 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.event_course_thumbnail_section {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.group_thumbnail {
+    width: 30%;
+    min-width: 200px;
+    margin-bottom: 20px;
+    margin-right: 3%;
+}
+
+.event_course_thumbnail {
+    width: 200px;
+    height: 250px;
+    min-width: 150px;
+    margin-bottom: 20px;
+    margin-right: 3%;
+
+    position: relative;
+}
+
+.group_pic {
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    background-color: rebeccapurple;
+    margin-bottom: 10px;
+}
+
+.event_pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rebeccapurple;
+    margin-bottom: 10px;
+}
+
+.event_info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.page_title {
+    margin-right: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding: 18px 10%;
+    background-color:#fafafa;
+    width: 100%;
+    
+    position: fixed;
+    /*#FAFDFF;*/
+}
+
+.under_navbar_section {
+    height: 50px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.nav_icon {
+    width: 18px;
+    height: 18px;
+}
+
+#profile_img {
+    border-radius: 50%;
+    width: 16.2px;
+    height: 16.2px;
+}
+
+#active_nav {
+    background-color: blue;
+}
+
+.opacity30 {
+    opacity: 0.3;
+}
+
+.opacity35 {
+    opacity: 0.2;
+}
+
+.left_right_padding_15_percent {
+    padding: 50px 15% 0px;
+}
+
+.left_sidebar, .right_sidebar {
+    width: 20%;
+}
+
+.center_content {
+    background-color: sandybrown;
+    width: 60%;
+}
+
+.full_width_container {
+    width: 100%;
+}
+
+.filter_section_header {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter_section {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.left_sidebar hr {
+    width: 80%;
+}

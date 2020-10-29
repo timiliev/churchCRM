@@ -1,0 +1,107 @@
+{% extends "accounts/main.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="header">
+    <h1 class="page_title">People and Groups</h1>
+    <div class="function_button"><img class="opacity35" src="{% static 'images/plus icon.png' %}" alt=""></div>
+    <div class="function_button"><img class="opacity35" src="{% static 'images/filters icon.png' %}" alt=""></div>
+</div>
+
+<hr>
+
+<div class="section_header">
+    <h2>Recently added users</h2>
+    <a class="see_all" href="">See all</a>
+</div>
+<div class="profile_thumbnail_section">
+    <div class="profile_thumbnail">
+        <img class="profile_pic" src="{% static 'images/profile picture.jpg' %}" alt="profile picture">
+        <div class="username_and_note">
+            <h3>Лорем Ипсум</h3>
+            <p class="opacity35">Note</p>
+        </div>
+    </div>
+
+    <div class="profile_thumbnail">
+        <img class="profile_pic" src="{% static 'images/profile picture.jpg' %}" alt="profile picture">
+        <div class="username_and_note">
+            <h3>Друг Некој</h3>
+            <p class="opacity35">Note</p>
+        </div>
+    </div>
+
+    <div class="profile_thumbnail">
+        <img class="profile_pic" src="{% static 'images/profile picture.jpg' %}" alt="profile picture">
+        <div class="username_and_note">
+            <h3>Долор Силамет</h3>
+            <p class="opacity35">Note</p>
+        </div>
+    </div>
+
+    <div class="profile_thumbnail">
+        <img class="profile_pic" src="{% static 'images/profile picture.jpg' %}" alt="profile picture">
+        <div class="username_and_note">
+            <h3>Незнам Веќе</h3>
+            <p class="opacity35">Note</p>
+        </div>
+    </div>
+</div>
+
+<hr>
+<div class="section_header">
+    <h2>Recently created groups</h2>
+    <a class="see_all" href="">See all</a>
+</div>
+<div class="groups_thumbnail_section">
+    <div class="group_thumbnail">
+        <div class="group_pic"></div>
+        <div class="group_info">
+            <h3>Group Name</h3>
+            <p class="opacity35">12 Members</p>
+        </div>
+    </div>
+
+    <div class="group_thumbnail">
+        <div class="group_pic"></div>
+        <div class="group_info">
+            <h3>Group Name</h3>
+            <p class="opacity35">12 Members</p>
+        </div>
+    </div>
+
+    <div class="group_thumbnail">
+        <div class="group_pic"></div>
+        <div class="group_info">
+            <h3>Group Name</h3>
+            <p class="opacity35">12 Members</p>
+        </div>
+    </div>
+    
+    <div class="group_thumbnail">
+        <div class="group_pic"></div>
+        <div class="group_info">
+            <h3>Group Name</h3>
+            <p class="opacity35">12 Members</p>
+        </div>
+    </div>
+
+    <div class="group_thumbnail">
+        <div class="group_pic"></div>
+        <div class="group_info">
+            <h3>Group Name</h3>
+            <p class="opacity35">12 Members</p>
+        </div>
+    </div>
+
+    <div class="group_thumbnail">
+        <div class="group_pic"></div>
+        <div class="group_info">
+            <h3>Group Name</h3>
+            <p class="opacity35">12 Members</p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

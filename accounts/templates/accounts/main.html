@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <title>main</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main_2.css' %}" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav_links">
+                <li>
+                    <a href="{% url 'app-home' %}">
+                        {% if request.resolver_match.url_name == 'app-home' %}
+                            <img class="nav_item nav_icon" src="{% static 'images/home icon blue filled.png' %}" alt="blue house icon">
+                        {% else %}
+                            <img class="nav_item nav_icon opacity30" src="{% static 'images/home icon.png' %}" alt="house icon">
+                        {% endif %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'app-people' %}">
+                        {% if "/people/" in request.path %}
+                            <img class="nav_item nav_icon" src="{% static 'images/people icon blue filled.png' %}" alt="blue groups icon">
+                        {% else %}
+                            <img class="nav_item nav_icon opacity30" src="{% static 'images/people icon.png' %}" alt="groups icon">
+                        {% endif %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'app-events' %}">
+                        {% if "/events/" in request.path %}
+                            <img class="nav_item nav_icon" src="{% static 'images/calendar icon blue filled.png' %}" alt="blue events icon">
+                        {% else %}
+                            <img class="nav_item nav_icon opacity30" src="{% static 'images/calendar icon.png' %}" alt="events icon">
+                        {% endif %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'app-search' %}">
+                        {% if "/search/" in request.path %}
+                            <img class="nav_item nav_icon" src="{% static 'images/search icon blue.png' %}" alt="blue search icon">
+                        {% else %}
+                            <img class="nav_item nav_icon opacity30" src="{% static 'images/search icon.png' %}" alt="search icon">
+                        {% endif %}
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="nav_item" id="profile_img" src="{% static 'images/profile picture.jpg' %}" alt="profile picture">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="left_right_padding_15_percent">
+    <div class="under_navbar_section"></div>
+
+        {% block content %}
+    
+    
+        {% endblock content %}
+
+    </div>
+
+</body>
+
+</html>

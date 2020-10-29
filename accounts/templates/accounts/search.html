@@ -1,0 +1,64 @@
+{% extends "accounts/main.html" %}
+
+{% block content %}
+
+<div class="inline_flex_containter full_width_container">
+    <div class="left_sidebar">
+        <div class="header">
+            <h1 class="page_title">Filter</h1>
+        </div>
+        <div class="filter_section">
+            <h2 class="filter_section_header">
+                Category
+            </h2>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        </div>
+        <hr>
+        <div class="filter_section">
+            <h2 class="filter_section_header">
+                Category
+            </h2>
+            <label for="min_age">Min:</label>
+            <input type="number" id="min_age" name="min_age"><br><br>
+            
+            <label for="max_age">Max:</label>
+            <input type="number" id="max_age" name="max_age"><br><br>
+        </div>
+        <hr>
+        <div class="filter_section">
+            <h2 class="filter_section_header">
+                Sample text
+            </h2>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>
+        </div>
+        <hr>
+        <div class="filter_section">
+            <h2 class="filter_section_header">
+                Sample text
+            </h2>
+        </div>
+        <hr>
+    </div>
+    
+    <div class="center_content">
+        <div class="header">
+            <h1 class="page_title">Main</h1>
+        </div>
+    </div>
+    
+    <div class="right_sidebar">
+        <div class="header">
+            <h1 class="page_title">Additional</h1>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
