@@ -110,6 +110,9 @@ hr {
     border-radius: 50%;
     width: 40.5px;
     height: 40.5px;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 .profile_thumbnail h3, .group_thumbnail h3, .event_course_thumbnail h3{
@@ -254,4 +257,93 @@ hr {
 
 .left_sidebar hr {
     width: 80%;
+}
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 30%;
+    height: 20%;
+    min-width: 300px;
+    min-height: 50px;
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 10px;    
+    width: 80%;
+}
+
+.modal-button {
+    width: 45%;
+    height: 35px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: "Basis Grotesque Pro", Helvetica, Arial, sans-serif;
+
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.modal-button:hover {
+    background-color: #3CA5EE;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-button:active {
+
+}
+
+.circle-x-container {
+    border-radius: 50%;
+    background-color: #ececec;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.circle-x-container:hover {
+    background-color: #b6b6b6;
+    cursor: pointer;
+
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.x-icon {
+    width: 10px;
+    height: 10px;
 }
