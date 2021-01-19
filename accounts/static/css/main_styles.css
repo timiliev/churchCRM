@@ -58,11 +58,20 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 .function_button img {
     width: 11.7px;
     height: 11.7px;
+}
+
+.function_button:hover {
+    background-color: #3CA5EE;
 }
 
 .section_header {
@@ -277,7 +286,7 @@ hr {
     width: 30%;
     height: 20%;
     min-width: 300px;
-    min-height: 50px;
+    min-height: 150px;
     background-color: white;
     border-radius: 10px;
 
@@ -324,7 +333,7 @@ hr {
 
 .circle-x-container {
     border-radius: 50%;
-    background-color: #ececec;
+    background-color: white;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -336,7 +345,7 @@ hr {
 }
 
 .circle-x-container:hover {
-    background-color: #b6b6b6;
+    background-color: #ececec;
     cursor: pointer;
 
     transition: 0.2s;
@@ -346,4 +355,5 @@ hr {
 .x-icon {
     width: 10px;
     height: 10px;
+    opacity: 0.5;
 }

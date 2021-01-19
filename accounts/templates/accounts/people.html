@@ -5,18 +5,18 @@
 
 <div class="bg-modal">
     <div class="modal-content">
-        <div class="circle-x-container"><img src="{% static 'images/close icon.png' %}" class="x-icon" alt=""></div>
+        <div class="circle-x-container" id="modal-x-button-people-and-groups"><img src="{% static 'images/close icon.png' %}" class="x-icon" alt=""></div>
         <h2>Add new:</h2>
         <div class="modal-buttons">
-            <button name="person-button" type="button" class="modal-button">Person</button>
-            <button name="group-button" type="button" class="modal-button">Group</button>
+            <button name="person-button" type="button" class="modal-button" id="modal-button-add-person">Person</button>
+            <button name="group-button" type="button" class="modal-button" id="modal-button-add-group">Group</button>
         </div>
     </div>
 </div>
 
 <div class="header">
     <h1 class="page_title">People and Groups</h1>
-    <div class="function_button"><img class="opacity35" src="{% static 'images/plus icon.png' %}" alt=""></div>
+    <div class="function_button" id="modal-plus-button-people-and-groups"><img class="opacity35" src="{% static 'images/plus icon.png' %}" alt=""></div>
     <div class="function_button"><img class="opacity35" src="{% static 'images/filters icon.png' %}" alt=""></div>
 </div>
 
